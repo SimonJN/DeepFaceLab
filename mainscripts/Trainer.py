@@ -65,7 +65,6 @@ def trainerThread (s2c, c2s, e,
             def model_save():
                 if not debug and not is_reached_goal:
                     io.log_info ("Saving....", end='\r')
-                    print("Saving\n")
                     model.save()
                     shared_state['after_save'] = True
                     
